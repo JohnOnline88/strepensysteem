@@ -1,13 +1,8 @@
 <h2 class="title">Strepen</h2>
 <?php
 $ip=$_SERVER['REMOTE_ADDR'];
-//echo $ip;
-//87.211.88.179 = John thuis
-//87.211.111.51 = Clubhuis
 
-if($ip=="87.211.111.51" //clubhuis
-		or $ip=="145.132.88.28" //Thuis
-		or $ip=="90.145.53.100") { //Vosko
+if (in_array($ip, $ip_array)) {
 ?>
 <p><b>Let op! Vanaf 1 januari 2014 mag er alleen alcohol gekocht worden als je boven de 18 bent!</b></p>
 

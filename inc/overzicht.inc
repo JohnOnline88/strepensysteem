@@ -1,12 +1,9 @@
 <h2 class="title"> Overzicht schulden</h2>
 <?php
 $ip=$_SERVER['REMOTE_ADDR'];
-//echo $ip;
-//87.211.88.179 = John thuis
-//87.211.111.51 = Clubhuis
 
-if($ip=="87.211.111.51" //clubhuis
-		or $ip=="145.132.88.28" { //Thuis
+if (in_array($ip, $ip_array)) {
+
 ?>
 <p>Kom je niet in het overzicht voor? Dan sta je op nul. Je hebt dus geen schuld. Heb je een schuld en wil je betalen? Dan kun je geld overmaken naar
 rekening NL 70 INGB 066 323 4417 t.n.v. Hr J J den Hertog</p>
