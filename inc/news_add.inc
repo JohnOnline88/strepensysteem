@@ -7,7 +7,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
 	
 					$to = "Stam <webmaster@diekantankys.nl>";
 					$subject = "Stam Mailing: ".$_POST['onderwerp']."";
-					$headers = "From: Stambestuur <stambestuur@diekantankys.nl>";
+					$headers = "From: ".$email_from."\n";
 					$body = "Beste Stam,\n\n";
 					$body .= "".$_POST['bericht']."\n\n";
 					$body .= "Groeten, \n\n";
@@ -24,7 +24,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
 					$to = "".$reultaat['naam']." <".$resultaat['email'].">";
 					$subject = "Stam Mailing: ".$_POST['onderwerp']."";
 
-					$headers = "From: Stambestuur <stambestuur@diekantankys.nl>\n";
+					$headers = "From: ".$email_from."\n";
 
 					$body = "Beste ".$resultaat['naam'].",\n\n";
 					$body .= "".$_POST['bericht']."\n\n";
@@ -47,7 +47,7 @@ if($_SERVER['REQUEST_METHOD']=="POST"){
 					$to = "".$reultaat['naam']." <".$resultaat['email'].">";
 					$subject = "Stam Mailing: ".$_POST['onderwerp']."";
 
-					$headers = "From: Stambestuur <stambestuur@diekantankys.nl>";
+					$headers = "From: ".$email_from."\n";
 
 
 					$body = "Beste ".$resultaat['naam'].",\n\n";
