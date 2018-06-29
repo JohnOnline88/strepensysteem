@@ -20,11 +20,11 @@ while ($resultaat = mysql_fetch_array($result)){
 	$to = "".$resultaat['email']."";
 	$subject = "Stambetaling verwerkt";
 
-	$headers = "From: Stambestuur <stambestuur@diekantankys.nl>\n";
+	$headers = "From: ".$email_from."\n";
 
 	$body = "Beste ".$resultaat['naam'].",\n\n";
 	$body .= "Zojuist is er een betaling aan de stam verwerkt van ".$aantal." euro. Daar zijn we blij mee!.\n\n";
-	$body .= "Wil je weten wat je actuele saldo is? Kijk dan op http://stam.diekantankys.nl.\n\n";
+	$body .= "Wil je weten wat je actuele saldo is? Kijk dan op ".$url.".\n\n";
 	$body .= "Groeten, \n\n";
 	$body .= "Het stambestuur"; 
 

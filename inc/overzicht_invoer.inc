@@ -28,13 +28,12 @@ $sql = "SELECT *
 					$to = "".$resultaat['email']."";
 					$subject = "Stamschuld te hoog!";
 
-					$headers = "From: Stambestuur <stambestuur@diekantankys.nl>\n";
+					$headers = "From: ".$email_from."\n";
 
 					$body = "Beste ".$resultaat['naam']."\n\n";
-					$body .= "Na het invoeren van je laatst gekochte producten op de stam is gebleken dat je schuld boven de
-10 euro staat. Je schuld is op dit moment:
+					$body .= "Na het invoeren van je laatst gekochte producten op de stam is gebleken dat je schuld boven de 10 euro staat. Je schuld is op dit moment:
 ".number_format($resultaat2['schuld'],2)."  euro\n\n";
-					$body .= "Dit is volgens het stambestuur teveel! We willen je dan ook vragen om zo snel mogelijk te betalen! Dit kan door geld over te maken naar rekening NL 70 INGB 066 323 4417 t.n.v. Hr J J den Hertog \n\n";
+					$body .= "Dit is volgens het stambestuur teveel! We willen je dan ook vragen om zo snel mogelijk te betalen! Dit kan door geld over te maken naar rekening ".$stamrekening." \n\n";
 					$body .= "Mocht je nog vragen hebben of denk je dat er iets niet klopt beantwoord dan dit mailtje.\n\n";
 					$body .= "Groeten, \n\n";
 					$body .= "Het stambestuur"; 
