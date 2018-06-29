@@ -1,0 +1,1 @@
+<p>Helaas is het inloggen mislukt. Klik <a href="index.php?id=1">hier</a> om terug te keren naar de index</p>
