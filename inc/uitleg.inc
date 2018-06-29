@@ -17,8 +17,7 @@
 		
 		<h2>Hoe zit het dan met afbetalen?</h2>
 		<p>Heb je nu een keer geld bij je en wil je je streepjes wegwerken? Zoek iemand van het stambestuur 
-		bij hun kun je je geld kwijt. Zij zullen dit ook verwerken in dit systeem. 
-		Geld overmaken kan ook, doe dit dan naar rekening NL 70 INGB 066 323 4417 t.n.v. Hr J J den Hertog </p>
+		bij hun kun je je geld kwijt. Zij zullen dit ook verwerken in dit systeem.</p>
 		
 		<h2>Foutje?</h2>
 		<p>Denk je dat er iets niet goed gegaan is in het systeem, of heb je zelf iets fout ingevoerd? Stuur dan een mailtje naar 

@@ -1,5 +1,6 @@
 <?php
 ob_start();
+include 'inc/config.inc';
 include 'inc/mysql.inc';
 
 session_start();
